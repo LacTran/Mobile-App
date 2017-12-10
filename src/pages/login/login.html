@@ -1,0 +1,40 @@
+
+<!--
+  Login page from the module 5
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="login-content" padding>
+    <img id="login" src="https://rewards.rabbit.co.th/images/icons/login.svg">
+
+    <div class="login-box">
+        
+      <ion-list>
+  
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input type="text" #username></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" #password></ion-input>
+    </ion-item>
+    
+      </ion-list>
+      
+        <ion-row>
+          <ion-col class="signup-col">
+        <button ion-button (click)="signInUser()" item-left>Sign In</button>
+        <button ion-button (click)="createAccount()" item-left>Register</button>
+          </ion-col>
+        </ion-row>
+        
+    
+    </div>
+  </ion-content>

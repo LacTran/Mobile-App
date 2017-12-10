@@ -1,0 +1,74 @@
+<!--
+ New contact page with multiline list and FABS
+-->
+<ion-header>
+  
+    <ion-navbar color="primary">
+      <ion-title>Contact Information
+      </ion-title>
+      <ion-buttons start>
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+    
+  </ion-header>
+
+<!--
+  My plan is to link all social media to the FABs icon so that they can be accessed easily
+-->
+<ion-content padding>
+    <ion-list>
+      <!--Added phone number, email, organization for more contact means. -->
+        <ion-item>
+          Telephone: 0469434897
+          <ion-icon name="ios-call"></ion-icon>
+        </ion-item>
+        <ion-item>
+          Email address: trangialac.fin@gmail.com
+          <ion-icon name="ios-mail"></ion-icon>
+        </ion-item>
+        <ion-item>
+          Organization: Laurea UAS
+          <ion-icon name="ios-home"></ion-icon>
+        </ion-item>
+        <ion-item>
+          Facebook
+          <ion-icon name="logo-facebook" color="primary"></ion-icon>
+        </ion-item>
+        <ion-item>
+          Instagram
+          <ion-icon name="logo-instagram" color="dark"></ion-icon>
+        </ion-item>
+        <ion-item> 
+          Twitter
+          <ion-icon name="logo-twitter" color="primary"></ion-icon>
+        </ion-item>
+        <ion-item>
+          Google Plus
+          <ion-icon name="logo-googleplus" color="danger"></ion-icon>
+        </ion-item>
+      <!--Here is new item created to help user logout
+      -->
+        <ion-item (click)="logout()">
+          Log out
+          <ion-icon name="arrow-forward" color="danger"></ion-icon>
+        </ion-item>
+    </ion-list>
+
+  <ion-fab right bottom>
+    <button ion-fab color="danger"><ion-icon name="md-share"></ion-icon></button>
+    <ion-fab-list side="left">
+      <button ion-fab color="primary"><ion-icon name="logo-twitter"></ion-icon></button>
+      <button ion-fab color="primary"><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab color="dark"><ion-icon name="logo-instagram"></ion-icon></button>
+      <button ion-fab color="danger"><ion-icon name="logo-googleplus"></ion-icon></button>
+            <!--Here is new item created to help user logout
+      -->
+      <button ion-fab color="danger" (click)="logout()"><ion-icon name="arrow-forward"></ion-icon></button>
+      
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>
