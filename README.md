@@ -26,3 +26,4 @@ Substitute ios for android if not on a Mac.
 
 "# test2app" 
 "# test2app" 
+"# test-2" 
